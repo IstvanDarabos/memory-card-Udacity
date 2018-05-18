@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/flip-grid-new.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Matching Game</h1>
+    <ul class="stars">
+      <li><i class="fa fa-star" id="starThree"></i></li>
+      <li><i class="fa fa-star" id="starTwo"></i></li>
+      <li><i class="fa fa-star" id="starOne"></i></li>
+      <span class="steps">0</span> Steps
+      <span class="timerText">Time: <span class="clock">00:00</span></span>
+      <span class="restartText">Restart: </span><span class="fa fa-repeat" id="restart" onclick="restartGame()"> </span>
+      <span class="exitGameText">Exit Game: </span><button class="w3-button w3-tiny w3-red" id="exitGame" onclick="exitGameFunction()">X</button>
+    </ul>
+    <div id="popup"></div>
+    <div class="grid-container"></div>
+    <div class="margin-top-x">
+      <button class="btn btn-primary" id="axis-x-btn">Click to rotate in x direction</button>
+    </div>
+    <div class="margin-top-y">
+      <button class="btn btn-primary" id="axis-y-btn">Click to rotate in y direction</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/v1.1.2/dist/jquery.flip.min.js"></script>
+    <script src="js/flip-grid-new.js"></script>
+  </body>
+</html>

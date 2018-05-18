@@ -1,0 +1,208 @@
+
+body {
+  background: #ffffff url('../img/geometry2.png');
+  font-family: 'Coda', cursive;
+  width: 660px;
+	position: relative;
+	max-width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+  pointer-events: none;
+}
+
+.grid-container {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	display: grid;
+	position: relative;
+	width: 660px;
+	max-width: 100%;
+	min-height: 680px;
+	background: linear-gradient(140deg, #17f266 10%, #09afbc 85%);
+	padding: 32px;
+	grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-gap: 30px;
+	border-radius: 10px;
+	box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.card-grid {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.front {
+	border-radius: 8px;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  pointer-events: auto;
+  cursor: pointer;
+  background: transparent url(../img/back.png) center center no-repeat;
+}
+
+.back {
+	border-radius: 8px;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+#card1f , #card1s  {
+  background: transparent url(../img/card1.png) center center no-repeat;
+}
+
+#card2f , #card2s  {
+ background: transparent url(../img/card2.png) center center no-repeat;
+}
+
+#card3f , #card3s  {
+  background: transparent url(../img/card3.png) center center no-repeat;
+}
+
+#card4f , #card4s  {
+  background: transparent url(../img/card4.png) center center no-repeat;
+}
+
+#card5f , #card5s  {
+  background: transparent url(../img/card5.png) center center no-repeat;
+}
+
+#card6f , #card6s  {
+  background: transparent url(../img/card6.png) center center no-repeat;
+}
+
+#card7f , #card7s  {
+  background: transparent url(../img/card7.png) center center no-repeat;
+}
+
+#card8f , #card8s  {
+  background: transparent url(../img/card8.png) center center no-repeat;
+}
+
+#axis-x-btn {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#axis-y-btn {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0px;
+}
+
+.stars li {
+  list-style: none;
+  color: #FF1493;
+  float: left;
+  display: inline-block;
+}
+
+.steps {
+  margin-left: 50px;
+}
+
+#restart {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+
+.timerText {
+  margin-left: 50px;
+  color: 	#00008B;
+}
+
+.clock {
+  color: black;
+}
+
+.restartText {
+  margin-left: 50px;
+  color: #006400;
+}
+
+.exitGameText {
+  margin-left: 50px;
+}
+
+#exitGame {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.popup-text {
+  pointer-events: auto;
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2em;
+  letter-spacing: -2px;
+  word-spacing: 3px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+  border: 10px solid rgba(255,254,90,0.97);
+  border-radius: 15px;
+  background: #29A81B none no-repeat scroll 0 0;
+  color: rgba(0,0,0,0.6);
+  box-shadow: 5px 5px 15px 5px #9148FF;
+  padding: 30px 15px;
+  /* Width of popup can be changed */
+  width: 70%;
+  max-width: 500px;
+  max-height: 400px;
+  z-index: 5001;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.7); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.7);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}  
+
+@media screen and (max-width: 660px) {
+  .grid-container {
+	padding: 15px;
+  grid-gap: 15px;
+}
+  .steps, .timerText, .restartText {
+    margin-left: 50px;
+  }
+  .card-grid {
+    max-height: 125px;
+    max-width: 125px;
+  }
+  h1 {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-grid {
+    height: 80px;
+    width: 80px;
+  }
+}
