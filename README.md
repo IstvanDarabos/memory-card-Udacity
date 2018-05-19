@@ -20,7 +20,7 @@ Screenshots
 
 Start Screen
 
-Game in Play Game in Play
+Game in Play
 
 Win Screen
 
