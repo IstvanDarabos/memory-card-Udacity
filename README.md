@@ -8,7 +8,6 @@ Open to flip-grid-new.html
 How to Play the Game
 The game board consists of twelve to sixteen cards arranged randomly in a grid. The deck is made up of eight pairs of cards, each with different symbols on one side.
 
-nnnnééééé
 The player flips one card over to reveal its underlying symbol
 The player then turns over a second card, trying to find the corresponding card with the same symbol
 If the cards match, both cards stay flipped over
